@@ -1,0 +1,339 @@
+import java.lang.*;
+import java.util.*;
+
+class Main {
+	public static void main(String args[]) { 
+        
+        Scanner scn = new Scanner(System.in);
+        /*
+        Q1. Is the person eligible to vote?
+        Given an integer age as input, print whether the person is eligible to vote.
+
+        Examples:
+        Input: 27
+        Output: Eligible 
+
+        Input: 3
+        Output: Not Eligible 
+
+        Constraints: [1 - 200]
+        */
+        // int age = scn.nextInt();
+        // if (age >= 18) {
+        //     System.out.println("Eligible");
+        // }
+        // else {
+        //     System.out.println("Not Eligible");
+        // }
+
+        /*
+            Q2: Max of two numbers 
+
+            Given two integers A and B as input, 
+            print the larger value
+
+            Examples: 
+            Input: A = 4, B = 6
+            Output: 6 is bigger
+
+            Input: A = 9, B = 6
+            Output: 9 is bigger
+
+            Note: A and B will never be equal
+
+            Constraints: Integers
+        */
+        // int A = scn.nextInt();
+        // int B = scn.nextInt();
+
+        // if ( A > B ) {
+        //     System.out.println(A + " is bigger");
+        // }
+        // else {
+        //     System.out.println(B + " is bigger");
+        // }
+	
+        /*
+            Q3: Max of two numbers 
+
+            Given two integers A and B as input, 
+            print the larger value
+
+            Examples: 
+            Input: A = 4, B = 6
+            Output: 6 is bigger
+
+            Input: A = 9, B = 6
+            Output: 9 is bigger
+
+            Input: A = 6, B = 6
+            Output: Both are equal
+
+            Constraints: Integers
+        */
+
+        // int A = scn.nextInt();
+        // int B = scn.nextInt();
+
+        // if ( A > B ) {
+        //     System.out.println(A + " is bigger");
+        // }
+        // else if (B > A) {
+        //     System.out.println(B + " is bigger");
+        // }
+        // else {
+        //     System.out.println("Both are equal");
+        // }
+
+        /*
+            Q4: Patient's Temperature
+
+            Given the temperature of a patient in farenheit as Input
+            Print whether the temperature is low, normal or high
+
+            Note: 
+            Normal [98.2 - 98.8]
+
+            Input: 98.1
+            Output: Low 
+
+            Input: 98.5
+            Output: normal
+
+            Input: 99.5
+            Output: High
+        */
+        // double temp = scn.nextDouble();
+
+        // if ( temp < 98.2 ){
+        //     System.out.println("Low");
+        // }
+        // else if ( temp > 98.8){
+        //     System.out.println("High");
+        // }
+        // else {
+        //     System.out.println("Normal");
+        // }
+
+    
+        /*
+            Arithmetic Operators ++ 
+
+            Division (/)
+
+            Multiplication (*)
+        */
+
+        /*
+            Rules of Division in java
+
+            int / int -> int 
+            int / float -> float 
+            float / int -> float 
+            float / float -> float
+            long / int -> long 
+            double / float -> double 
+
+            int and long can be replaced in this rules 
+            float and double can be replaced in this rules 
+        */
+        // System.out.println(9/3); // -> 3
+        // System.out.println(11/3); // -> 3
+        // System.out.println(11f/3); // -3.66
+
+        /*
+            Multiplication Rules
+
+            int * int -> int (stored temporary)
+            int * long -> long (stored temporary)
+            long * int -> long (stored temporary)
+            long * long -> long (stored temporary)
+
+            int and float are replaceable 
+            long and double are replaceable
+
+            Range for integer [-10^9 to 10^9]
+
+                        A               B              temp variable            
+                    ______	     	 ______			 _______
+                    |      |		|      | 	  	| 		|
+                    |int   | 	x	|int   |	=	|int	|
+                    |______|		|______|		|_______|
+
+        */
+
+        // int x = 100000; // 10^5
+        // int y = 100000; // 10^5
+
+        // long z = x * y; // 10^10 [out of bound] garbage value
+        // System.out.println(z);
+
+        // long z = (long)x * y; // long * int -> long
+        // System.out.println(z);
+
+        // long z = (long)(x*y);  // (long)(4)
+        // 10^10 - cannot be stored in integer so we get garbage value
+        // System.out.println(z);
+
+        /*
+            Modulo (%)
+            Note: This is not percentage in Java. 
+
+            Operator used for fetching the reminder 
+            while we divide 2 numbers.
+
+            7 % 3 = 1
+            10 % 1 = 0
+            7 % 11 =7
+        */
+
+        /*
+            Q5: Odd or even 
+            Given an integer x as input, print whether
+            x is even or odd
+
+            Examples: 
+            Input: 3
+            Output: Odd
+
+            Input: 6
+            Output: Even 
+
+            Constraints: Integer range
+        */
+
+        // int num = scn.nextInt();
+        // if (num % 2 == 0) {
+        //     System.out.println("Even");
+        // }
+        // else { 
+        //     System.out.println("Odd");
+        // }
+
+        /*
+            Q6: Last digit
+
+            Given an integer as input, prints its last digit
+
+            Examples: 
+            Input: 83
+            Output: 3
+
+            Input: 651
+            Output: 1
+
+            Constraints: Integer
+        */
+
+        // int num = scn.nextInt();
+        // System.out.println(num%10); // H W this is basic logic
+
+        /*
+            Relational Operator
+                A > B
+                A < B 
+                A <= B 
+                A >= B 
+                A == B // to check if numbers are equal
+                A != B // to check if numbers are not equal
+
+            Logical Operator
+                AND GATE (&&)
+                T && T -> T 
+                T && F -> F 
+                F && T -> F 
+                F && F -> F 
+
+                OR GATE (||)
+                T || T -> T 
+                T || F -> T 
+                F || T -> T 
+                F || F -> F 
+
+        */
+
+        /*
+            Q7: Electricity Bill 
+
+            Given units of electricity consumed by a user 
+            Print the bill amount
+
+            Constraints: 
+            [1 - 1000]
+
+            Rules: 
+                [1 - 50] -> 1 / unit
+                [51 - 100] -> 2 / unit
+                [101 and above] -> 4 / unit
+            
+            Examples:
+
+            Input: 20
+            Output: 20*1 = 20
+
+            Input: 80
+            Output: 50 * 1 + 30 * 2 = 50 + 60 = 110
+
+            Input: 120
+            Output: 50 * 1 + 50 * 2 + 20*4 = 50 + 100 + 80 = 230
+        */
+
+        // int units = scn.nextInt();
+        // if (units <= 50){
+        //     System.out.println(units*1);
+        // }
+        // else if (units >= 51 && units <=100){
+        //     System.out.println(50*1 + (units-50)*2);
+        // }
+        // else {
+        //     System.out.println(
+        //         50*1 + 
+        //         50*2 + 
+        //         (units - 100) * 4
+        //     );
+        // }
+
+
+        /*
+            Amazon Question 
+            Fizz Buss   
+
+            Given an integer A as input
+            If A is divisible by 3 print Fizz 
+            If A is divisible by 5 print Buzz 
+            If A is divisible by 3 and 5 print Fizz Buzz 
+            Else print nothing
+
+            Examples: 
+            Input: 6
+            Output: Fizz
+
+            Input: 10
+            Output: Buzz
+
+            Input: 13
+            Output: nothing
+
+            Input: 30 
+            Output: Fizz Buzz
+
+            If else condition is chained
+
+        */
+
+        // int n = scn.nextInt();  
+        // if (n % 3 == 0 && n % 5 == 0) { 
+        //     System.out.println("FizzBuzz");
+        // }
+        // else if (n % 5 == 0) { 
+        //     System.out.println("Buzz");
+        // }
+        // else if (n % 3 == 0) {
+        //     System.out.println("Fizz");
+        // }
+        // else {
+        //     System.out.println("Nothing");
+        // }
+ 
+    }
+}

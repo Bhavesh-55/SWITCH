@@ -1,0 +1,284 @@
+import java.lang.*;
+import java.util.*; // Brings prebuild modules for us to use in our code
+
+public class Main {
+
+  // Public , private, protected, final, static  -> access modifiers -> LLD
+
+  public static int addTwoNumbers(int a, int b){
+    int sum = a + b; // 10 + 5 -> 15
+    return sum; // 15
+  } // access modifiers -> LLD 
+
+  // Print the sum of two value 
+  public static void printSumTwoNumbers(int a, int b) {
+    // If we use void, you are not expected to return a value 
+    System.out.println(a + b);
+    return; // Optional
+  }
+
+  /*
+  Q1: Given an integer as argument, 
+  return whether its even 
+
+  n = 12, true 
+  n = 5, false 
+
+  Data Type for true / False
+  */
+  // return type
+
+  public static boolean isEven(int n){
+    if(n%2 == 0){
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+
+  
+
+  // Some interesting facts on return statement 
+  // public static boolean randomFunction() {
+  //   // code 
+  //   return true; // will give the answer to the place where the function is called 
+  //   // some more code 
+  //   System.out.print(10); // reachable
+  // } // -> Line 43 is not reachable as we return before it executes 
+  // -> Causes error 
+
+  /*
+  Q2: Given an integer as argument, return whether it is 
+  small, medium or large 
+
+  < 10 return small
+  > 20 return large 
+  [10, 20] -> medium
+  */
+  // public static String classifyNumber(int n){
+  //   if(n < 10) {
+  //     return "small";
+  //   }
+  //   else if (n > 20) {
+  //     return "large";
+  //   }
+  //   else {
+  //     return "medium";
+  //   }
+  // }
+
+  // See what is the return tupe 
+  // what are going to be your inputs 
+  // What you return
+
+  /*
+  Q4: Given two doubles as argument 
+  Return the area of a rectangle 
+  */
+
+  // public static double areaOfRectangle(double l, double b) {
+  //   return l * b;
+  // }
+
+  /*
+  Q5: Given the radius of circle as input 
+  return its area rounded to the nearest integer 
+
+  R = 10
+  Ans = 314
+  */
+  // take time till 10:30 use internet 
+
+  // Math.PI //  This is a prebuild module 
+
+  // Pre compiled common code 
+  // We dont farm when we need food 
+  // We go to market 
+
+  // Most used part of code is already pre-compiled 
+  // We just need to use it 
+
+
+  // Some functionalities of Math module 
+
+  // Round a number to nearest interger we use 
+  // Math.round() // prebuild function
+
+  public static int areaOfCircle(double radius) {
+    // Math.round returns a long
+    // pi * r * r 
+    int area = Math.round(Math.PI * radius * radius);
+    return area;
+    // Math.PI -> constant that we get from math package 
+    // Math.round -> function to round to nearest integer 
+    // Math.round returns a double 
+    // to convert double to int we type 
+    // How to use these prebuild modules?
+  }
+  
+  /*
+    3.14 -> (int)3.14 => 3
+    3.4 -> (int)3.4 => 3
+    3.6 -> (int)3.6 => 3
+  */
+
+  /*
+  Math.round
+    3.14 -> 3.0
+    3.4 -> 3.0
+    3.6 -> 4.0
+    .. 
+    3.5 -> 4.0
+  */
+
+  /*
+  Math.ceil -> Rounds up to the smallest integer
+  greater than or equal to value 
+
+    ceil(3.4) -> 4.0
+    ceil(3.1) -> 4.0
+    ceil(3.0) -> 3.0
+
+    // double has more range of values that it can cover 
+  */
+
+  /*
+  Math.floor -> Rounds up to the largest integer 
+  smaller than or equal to value 
+
+    floor(3.5) -> 3.0
+    floor(3.7) -> 3.0
+    floor(4.0) -> 4.0
+  */
+
+  /*
+    Q6: Given an integer N as input, print 
+    all prime numbers from 1 to N 
+
+    [exactly 2 factors]
+
+    N = 5
+    [2, 3, 5]
+  */
+  // public static void printPrimes(int n){
+  //   for (int num = 1; num <= n; num += 1){
+  //     // check if num is prime 
+  //     int factors = 0;
+  //     for(int i = 1; i<= num; i++) {
+  //       if(num % i == 0) {
+  //         factors += 1;
+  //       }
+  //     }
+  //     if(factors == 2){
+  //       System.out.print(num + " ");
+  //     }
+  //   }
+  // }
+
+
+  // What is more meaningful is to sepearate code 
+  // based on concerns 
+  // -> LLD 
+
+  public static boolean isPrime(int n){
+    int factors = 0;
+    for(int i = 1; i<= n; i++) {
+      if(n % i == 0) {
+        factors += 1;
+      }
+    }
+    if(factors == 2){
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+
+  public static void printPrimes(int n){
+    for (int num = 1; num <= n; num += 1){
+      // check if num is prime 
+      if(isPrime(num)) {
+        System.out.print(num + " ");
+      }
+    }
+  }
+
+
+  // You have written this code 
+  // Your manager - tell me if a number is prime or not 
+
+  public static void main(String[] args) { // main is also a function
+    // You should not define a function
+    // inside another function
+
+    // before main or after main
+    // int a = 5, b = 10;
+    // System.out.println(addTwoNumbers(a, b)); // printing the return value
+
+    // // functionname(arguments, ) -> call a function
+
+    // // What if a function does not want to return any value?
+    // // Void -> empty
+    // printSumTwoNumbers(a, b);
+
+    // return statements
+    // System.out.print(randomFunction());
+
+    // System.out.println(classifyNumber(5));
+    // System.out.println(classifyNumber(11));
+    // System.out.println(classifyNumber(35));
+
+    // break 10:17 break
+    System.out.print(areaOfCircle(10));
+
+  }
+
+	// Quiz 1
+	// public static int sum(int a, int b) {
+	// 	return a + b;
+	// }
+
+	// public static void main(String[] args) {
+	// 	int a = 15, b = 5;
+	// 	sum(a, b);
+	// } // -> nothing gets printed 
+
+  // public static int sum(int a, int b) {
+	// 	System.out.print(a+b);
+	// } // is this returint integer 
+
+	// public static void main(String[] args) {
+	// 	int a = 15, b = 5;
+	// 	sum(a, b);
+	// } // -> Error 
+
+
+  // // Quiz 3
+	// public static int sum(int a, int b) {
+  //   // a - 15
+  //   // b - 10
+
+  //   // When you pass arguements the values are what are passed 
+	// 	return a+b; // 25
+	// }
+
+	// public static void main(String[] args) {
+	// 	int a = 15, b = 5;
+	// 	System.out.println(sum(a, 10)); // 15, 10
+	// } // -> 25
+
+  // // Quiz 4
+	// public static int sum(int a, int b) {
+  //   // a -> 6
+  //   // b -> 10
+	// 	return a+b; // 16
+	// }
+
+	// public static void main(String[] args) {
+	// 	int a = 15, b = 5;
+	// 	System.out.println(sum(6, 10));
+	// } // -> 16 
+
+}

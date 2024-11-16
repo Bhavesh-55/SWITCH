@@ -1,0 +1,82 @@
+M1: MODULE - 1(1 week)(WELCOME)
+Day 1, 12 Jul
+Day 3, 14 Jul
+-----------------------------------------------MONTH1(JAVA)
+M2:(4 weeks)
+Day 4, 19 Jul
+Day 14, 11 Aug
+11 LECTURE(JAVA)
+-------------------------------------MONTH2(BASIC DSA)
+MODULE - 3(4 weeks):Introduction to Problem Solving (Intermediate) 1
+Day 15, 14 Aug
+Day 22, 4 Sep
+(BASIC DSA)(7 LECTURE)
+----------------------------------------MONTH3
+MODULE - 4(4 weeks):ntroduction to Problem Solving (Intermediate) 2
+Day 23, 6 Sep
+Day 30, 21 Sep
+DSA (7 LECTURE)
+----------------------------------------------MONTH4
+MODULE - 5(4 weeks):Advanced DSA 1
+Day 31, 25 Sep
+Day 43, 25 Oct
+(12 LECTURE)(Advanced DSA)
+-----------------------------------------------------MONTH5
+MODULE - 6(4 weeks):Advanced DSA 2
+Day 44, 27 Oct
+Day 57, 29 Nov
+(12 LECTURE)(DSA + OOPS)
+-----------------------------------------------------MONTH6
+MODULE - 7(4 weeks):Advanced DSA 3
+Day 58, 1 Dec
+Day 71, 3 Jan
+(12 LECTURE)(linked list,stack,queue,bst)
+-----------------------------------------------MONTH7.5
+MODULE - 8(5 weeks):Advanced DSA 4
+Day 72, 5 Jan
+Day 85, 9 Feb
+
+(12 LECTURE)--heap,greedy,dp,graph
+-----------------------------------------------MONTH8
+MODULE - 9(2 weeks):Databases & SQL 
+Day 86, 10 Feb
+Day 101, 19 Mar
+(14 LECTURE+OPTIONS)
+---------------------------------------------------MONTH9
+MODULE - 10(4 weeks):DSA 4.2 revision dsa
+Day 104, 26 Mar
+Day 116, 27 Apr
+(12 LECTURE)(Backtracking,DP,Graphs)
+-------------------------------------------------------MONTH10
+MODULE - 11 (4 weeks):Backend LLD and Development 1 (LLD & OOP)
+Day 117, 3 May
+Day 130, 3 Jun(13 LECTURE)
+--------------------------------------------------------------------------MONTH11
+MODULE - 12(4 weeks)Backend LLD and Development 2(SOLID)(DESIGN PATTERN)
+Day 132, 7 Jun
+Day 143, 3 Jul
+(10 LECTURE)
+
+------------------------------------------------------MONTH12
+MODULE - 13(4 weeks)Backend LLD and Development 3
+Day 145, 8 Jul
+Day 168, 15 Nov
+(22 LECTURE)
+DESIGN Problems
+
+
+---------------------------MONTH13
+MODULE - 14 (4 weeks)High Level Design(Microservices,Caching,SQL vs NoSQL)
+Day 170, 20 Nov
+Day 187, 3 Jan
+(18 LECTURE)
+
+--------------------------MONTH14.5
+MODULE - 15 6 weeks: Backend Capstone Project(GIT,SPRING FRAME WORK,API,TESTING,)
+Day 189, 15 Jan
+Day 215, 17 Mar
+(27 LECTURE)
+------------------------------------------------------
+TOTAL:1YEAR & 7MONTH
+Day 1, 12 Jul
+Day 215, 17 Mar

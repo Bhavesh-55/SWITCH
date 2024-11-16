@@ -1,0 +1,161 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+public class Main {
+  public static void main(String[] args) {
+      System.out.println("Hello, World!");
+  }
+}a
+
+
+// Statements to be considered as Margins
+// Don't touch them, don't change them. 
+// We will understand them as the class progresses
+
+import java.lang.*;
+import java.util.*;
+
+class Main {
+    public static void main(String args[]){
+
+        // System.out.print("Hello World");
+        // "" String / Text 
+        // System.out.print(10);
+        // Printing digit
+
+        // Quiz
+        // System.out.print("5*10"); // Learning is what is in double quotes are strings 
+        // system.out.print(10); // Java is case sensitive (error)
+        // System.out.print("Hey There"); // We will only print what is in the double quotes. 
+
+
+        // Basic Arithmetics
+        // + (Addition), * (Mul), / (Div), - (Sub)
+        // System.out.print(10+5);
+        // System.out.print(10-5);
+        // System.out.print(10*5);
+        // System.out.print(10/5);
+
+        // Differences between Print and Println
+        // System.out.print("My name is Dhiraj");
+        // System.out.print("My age is 27");
+
+        System.out.println("My name is Dhiraj"); // Print in a single line
+        System.out.println("My age is 27");
+
+        // Comments 
+        // - Single line comment 
+        /*
+        Multi 
+        Line 
+        Comment
+        */
+
+        // System.out.print("Dhiraj");
+        // System.out.print("Subramanian");
+        // cmd + / for commenting the selection
+        // ctrl + / for commenting the selection
+
+
+        // Concatenation 10+5 = 15
+        // "string " + " string 2" -> ?
+
+        // System.out.println("Ram " + " Shyam");
+        // "Ram " + " Shyam" = "Ram  Shyam" // Concatenation
+
+        // System.out.println("My age is " + 27 + " years old");
+        // My age is 27 years old
+
+        // Break 
+
+        // Data Types
+        // String / Text 
+
+        // DRY - Do not repeat yourself
+        // String name = "Dhiraj";
+        // System.out.println("My name is " + name);
+        // System.out.println(name + "'s is 27 years old");
+
+        // int i = 10;
+        // long l = 10000000000l;
+        // float f = 3.14f;
+        // double d = 1.1451617181;
+
+        // In java when you initialize value
+        // A whole number is considered interger by default
+        // A decimal number is considered as double by default
+        // When you want to over write it, we specifically mention l and f;
+
+        // NOTE: This is only when you initialize the value, 
+        // not when you get data from user;
+
+        // System.out.println(i + " " + l + " " + f + " " + d);
+
+        // Type casting 
+        // I have type casted the value from low -> high
+        // int i = 5;
+        // long l = i; // Implicit type casting
+        // System.out.println(l);
+
+        // Cast II
+        // long l = 1000l;
+        // int i = (int)l;
+        // // I am explicity telling to convert the value. 
+        // // This is called explicit type casting.
+        // System.out.println(i);
+
+        // CASE III
+        // long l = 1000000000000l;
+        // int i = (int)l;
+        // System.out.println(i);
+        // Data loss and we call this output garbage value
+
+        // Taking input from user
+        Scanner scn = new Scanner(System.in); // We will discuss this later in this course
+        // int i = scn.nextInt();
+        // long l = scn.nextLong();
+        // float f = scn.nextFloat();
+        // double d = scn.nextDouble();
+        // System.out.println(i + " " + l + " " + f + " " + d);
+
+
+        // String name = scn.next(); // This only reads single string value and not the entire line
+        // String name = scn.nextLine(); // Takes the entire line as the input
+        // System.out.println(name);
+
+        // String name = scn.nextLine();
+        // String name1 = scn.nextLine();
+
+        /*
+        Q1. Take 2 names X and Y as input 
+        and print X and Y are friends. 
+
+        Example: 
+        X = Naresh
+        Y = Dhiraj
+
+        Output: 
+        Naresh and Dhiraj are friends.
+        */
+        // String x = scn.nextLine();
+        // String y = scn.nextLine();
+
+        // System.out.println(x + " and " + y + " are friends");
+
+        /*
+        Q1. Take name X and age Y as input 
+        and print X age is Y. 
+
+        Example: 
+        X = Dhiraj
+        Y = 27
+
+        Output: 
+        Dhiraj age is 27
+        */
+        // String x = scn.nextLine();
+        // int age = scn.nextInt();
+
+        // System.out.println(x + " age is " + age);
+
+    }
+}

@@ -1,0 +1,358 @@
+Day:3
+
+import java.lang.*;
+import java.util.*;
+
+class Main {
+    public static void main(String args[]){
+        // System.out.print("5*10"); // Learning is what is in double quotes are strings 
+        // system.out.print(10); // Java is case sensitive (error)
+        // System.out.print("Hey There"); // We will only print what is in the double quotes. 
+
+
+        // Basic Arithmetics
+
+        // System.out.print(10+5);
+        // System.out.print(10-5);
+        // System.out.print(10*5);
+        // System.out.print(10/5);
+
+        // Differences between Print and Println
+        // System.out.print("My name is Dhiraj");
+        // System.out.print("My age is 27");
+
+        System.out.println("My name is Dhiraj"); // Print in a single line
+        System.out.println("My age is 27");
+
+        // Comments 
+        // - Single line comment 
+        /*
+        Multi 
+        Line 
+        Comment
+        */
+
+        // System.out.println("Ram " + " Shyam");
+        // "Ram " + " Shyam" = "Ram  Shyam" // Concatenation
+
+        // System.out.println("My age is " + 27 + " years old");
+        // My age is 27 years old
+
+
+        // Data Types
+        // String / Text 
+
+        // DRY - Do not repeat yourself
+        // String name = "Dhiraj";
+        // System.out.println("My name is " + name);
+        // System.out.println(name + "'s is 27 years old");
+
+        // int i = 10;
+        // long l = 10000000000l;
+        // float f = 3.14f;
+        // double d = 1.1451617181;
+
+        // In java when you initialize value
+        // A whole number is considered interger by default
+        // A decimal number is considered as double by default
+        // When you want to over write it, we specifically mention l and f;
+
+        // NOTE: This is only when you initialize the value, 
+        // not when you get data from user;
+
+        // System.out.println(i + " " + l + " " + f + " " + d);
+
+        // Type casting 
+        // I have type casted the value from low -> high
+        // int i = 5;
+        // long l = i; // Implicit type casting
+        // System.out.println(l);
+
+        // Cast II
+        // long l = 1000l;
+        // int i = (int)l;
+        // // I am explicity telling to convert the value. 
+        // // This is called explicit type casting.
+        // System.out.println(i);
+
+        // CASE III
+        // long l = 1000000000000l;
+        // int i = (int)l;
+        // System.out.println(i);
+        // Data loss and we call this output garbage value
+
+        // Taking input from user
+        Scanner scn = new Scanner(System.in); // We will discuss this later in this course
+        // int i = scn.nextInt();
+        // long l = scn.nextLong();
+        // float f = scn.nextFloat();
+        // double d = scn.nextDouble();
+        // System.out.println(i + " " + l + " " + f + " " + d);
+
+
+        // String name = scn.next(); // This only reads single string value and not the entire line
+        // String name = scn.nextLine(); // Takes the entire line as the input
+        // System.out.println(name);
+
+        // String name = scn.nextLine();
+        // String name1 = scn.nextLine();
+
+        /*
+        Q1. Take 2 names X and Y as input 
+        and print X and Y are friends. 
+
+        Example: 
+        X = Naresh
+        Y = Dhiraj
+
+        Output: 
+        Naresh and Dhiraj are friends.
+        */
+        // String x = scn.nextLine();
+        // String y = scn.nextLine();
+
+        // System.out.println(x + " and " + y + " are friends");
+
+        /*
+        Q1. Take name X and age Y as input 
+        and print X age is Y. 
+
+        Example: 
+        X = Dhiraj
+        Y = 27
+
+        Output: 
+        Dhiraj age is 27
+        */
+        // String x = scn.nextLine();
+        // int age = scn.nextInt();
+
+        // System.out.println(x + " age is " + age);
+
+    }
+}
+      
+
+	  // if ( temp < 98.2 ){
+        //     System.out.println("Low");
+        // }
+        // else if ( temp > 98.8){
+        //     System.out.println("High");
+        // }
+        // else {
+        //     System.out.println("Normal");
+        // }
+
+ DAY :4
+
+            IMP :Rules of Division in java
+ 
+            int / int -> int 
+            int / float -> float 
+            float / int -> float 
+            float / float -> float
+            long / int -> long 
+            double / float -> double 
+
+            int and long can be replaced in this rules 
+            float and double can be replaced in this rules 
+      
+        // System.out.println(11/3); // -> 3
+        // System.out.println(11f/3); // -3.66
+
+        /*
+            Multiplication Rules
+
+            int * int -> int (stored temporary)
+            int * long -> long (stored temporary)
+            long * int -> long (stored temporary)
+            long * long -> long (stored temporary)
+
+            int and float are replaceable 
+            long and double are replaceable
+
+            Range for integer [-10^9 to 10^9]  --> IMP
+
+                        A               B              temp variable            
+                    ______	     	 ______			 _______
+                    |      |		|      | 	  	| 		|
+                    |int   | 	x	|int   |	=	|int	|
+                    |______|		|______|		|_______|
+
+        */
+
+        // int x = 100000; // 10^5
+        // int y = 100000; // 10^5
+
+        // long z = x * y; // 10^10 [out of bound] garbage value
+        // System.out.println(z);
+
+        // long z = (long)x * y; // long * int -> long
+        // System.out.println(z);
+
+        // long z = (long)(x*y);  // (long)(4)
+        // 10^10 - cannot be stored in integer so we get garbage value
+        // System.out.println(z);
+
+        /*
+            Modulo (%)
+            Note: This is not percentage in Java. 
+
+            Operator used for fetching the reminder 
+            while we divide 2 numbers.
+
+            7 % 3 = 1
+            10 % 1 = 0
+            7 % 11 =7
+        */
+
+        /*
+            Q5: Odd or even 
+            Given an integer x as input, print whether
+            x is even or odd
+
+            Examples: 
+            Input: 3
+            Output: Odd
+
+            Input: 6
+            Output: Even 
+
+            Constraints: Integer range
+        */
+
+        // int num = scn.nextInt();
+        // if (num % 2 == 0) {
+        //     System.out.println("Even");
+        // }
+        // else { 
+        //     System.out.println("Odd");
+        // }
+
+        /*
+            Q6: Last digit
+
+            Given an integer as input, prints its last digit
+
+            Examples: 
+            Input: 83
+            Output: 3
+
+            Input: 651
+            Output: 1
+
+            Constraints: Integer
+        */
+
+        // int num = scn.nextInt();
+        // System.out.println(num%10); // H W this is basic logic
+
+        /*
+            Relational Operator
+                A > B
+                A < B 
+                A <= B 
+                A >= B 
+                A == B // to check if numbers are equal
+                A != B // to check if numbers are not equal
+
+            Logical Operator
+                AND GATE (&&)
+                T && T -> T 
+                T && F -> F 
+                F && T -> F 
+                F && F -> F 
+
+                OR GATE (||)
+                T || T -> T 
+                T || F -> T 
+                F || T -> T 
+                F || F -> F 
+
+        */
+
+        /*
+            Q7: Electricity Bill 
+
+            Given units of electricity consumed by a user 
+            Print the bill amount
+
+            Constraints: 
+            [1 - 1000]
+
+            Rules: 
+                [1 - 50] -> 1 / unit
+                [51 - 100] -> 2 / unit
+                [101 and above] -> 4 / unit
+            
+            Examples:
+
+            Input: 20
+            Output: 20*1 = 20
+
+            Input: 80
+            Output: 50 * 1 + 30 * 2 = 50 + 60 = 110
+
+            Input: 120
+            Output: 50 * 1 + 50 * 2 + 20*4 = 50 + 100 + 80 = 230
+        */
+
+        // int units = scn.nextInt();
+        // if (units <= 50){
+        //     System.out.println(units*1);
+        // }
+        // else if (units >= 51 && units <=100){
+        //     System.out.println(50*1 + (units-50)*2);
+        // }
+        // else {
+        //     System.out.println(
+        //         50*1 + 
+        //         50*2 + 
+        //         (units - 100) * 4
+        //     );
+        // }
+
+
+        /*
+            Amazon Question 
+            Fizz Buss   
+
+            Given an integer A as input
+            If A is divisible by 3 print Fizz 
+            If A is divisible by 5 print Buzz 
+            If A is divisible by 3 and 5 print Fizz Buzz 
+            Else print nothing
+
+            Examples: 
+            Input: 6
+            Output: Fizz
+
+            Input: 10
+            Output: Buzz
+
+            Input: 13
+            Output: nothing
+
+            Input: 30 
+            Output: Fizz Buzz
+
+            If else condition is chained
+
+        */
+
+        // int n = scn.nextInt();  
+        // if (n % 3 == 0 && n % 5 == 0) { 
+        //     System.out.println("FizzBuzz");
+        // }
+        // else if (n % 5 == 0) { 
+        //     System.out.println("Buzz");
+        // }
+        // else if (n % 3 == 0) {
+        //     System.out.println("Fizz");
+        // }
+        // else {
+        //     System.out.println("Nothing");
+        // }
+ 
+    }
+}

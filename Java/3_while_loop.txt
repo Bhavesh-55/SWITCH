@@ -1,0 +1,146 @@
+import java.lang.*;
+import java.util.*;
+
+class Main {
+	public static void main(String args[]) { 
+
+		Scanner scn = new Scanner(System.in);
+
+        /*
+        Q1: Given an integer N as input
+        print from 1 to N 
+
+        Input: 5
+        Output: 1 2 3 4 5
+
+        Constraints: N - [1, 10000]
+        */
+
+        // int n = scn.nextInt();
+        // int i = 1; // initialize
+        // while (i <= n) { // condition
+        //     System.out.print(i + " "); // task
+        //     i = i+1; // updating
+        // }
+
+        /*
+        Q2: Given an input N print values from N to 1
+
+        Input: 5
+        Output: 5 4 3 2 1
+
+        Constraints: N : [2, 1000]
+        Constraints tell us what are the possible inputs
+        */
+
+        // int n = scn.nextInt();
+        // int i = n;
+        // while (i >= 1) {
+        //     System.out.print(i + " ");
+        //     i = i - 1;
+        // }
+
+        /*
+        Q3: Given an integer N as input 
+        print odd values from 1 to N 
+
+        Input: 8
+        Output: 1 3 5 7
+        */
+        // int n = scn.nextInt();
+        // int i = 1; // initialization
+        // while (i <= n) {
+        //     System.out.print(i + " ");
+        //     // odd even odd even 
+        //     i = i + 2;
+        // }
+
+        /*
+        Q4: Given an integer N as input 
+        print multiples of 4 till N as output 
+
+        Input: 18
+        Output: 4 8 12 16
+        */
+        // int n = scn.nextInt();
+        // int i = 4; // initialization
+        // while ( i <= n) { // condition
+        //     System.out.print(i + " ");
+        //     i = i + 4; // updation
+        // }
+
+        // Quiz 2
+        // int i = 1; // init
+        // while (i <= 10) { // 5<=10
+        //     i = i * i; // i = 5*5 = 25
+        //     System.out.print(i + " "); // 25
+        //     i = i + 1; // 26
+        // }
+
+        /*
+        Tabular Technique 
+
+        i  condition       i*i(output)        i++
+        1    T               1                  2
+        2    T               4                  5
+        5    T               25                 26
+        26   F ---- Break
+        [1, 4, 25]
+        */
+
+        // int i = 0;
+        // while (i <= 10){ // 0 <= 10
+        //     System.out.print(i + " ");
+        //     i = i * i;
+        // }
+
+        /*
+        Tabular Technique
+        i  condition         i        i = i * i
+        0    T               0            0
+        0    T               0            0
+        0    T               0            0
+        0    T               0            0
+        0    T               0            0
+        
+        // The condition never gets failed
+        // This is called infinite loop
+        */
+
+        // Break till 10:05 PM
+
+        /*
+		Q5: Given an integer N as input
+		print perfect squares till N
+		
+		Perfect Square -> An integer whose 
+		square root is an integer
+
+		Input: N = 30
+		Output: 1 4 9 16 25
+		*/
+
+        // int n = scn.nextInt();
+		// int i = 1;
+        // while( i*i <= n){ // condition depends on square value 
+        //     System.out.print( i*i + " ");
+		// 	i = i + 1;
+        // }
+
+        // initialization, condition, updation, task
+
+        /*
+            Reverse a number and create an integer 
+            450 -> 054 -> int(054) = 54
+        */
+        int n = scn.nextInt(); 
+        String rev = "";
+
+        while (n > 0) { 
+            int d = n % 10;
+            n = n / 10; 
+            rev = rev * 10 + d; 
+        }
+        System.out.print(rev);
+    }
+}
